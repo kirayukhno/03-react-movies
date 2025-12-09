@@ -35,8 +35,7 @@ export default function App() {
         }
     };
 
-    const handleMovieSelect = (movieId: number) => {
-        const movie = movies.find(m => m.id === movieId);
+    const handleMovieSelect = (movie: Movie) => {
         if (movie) {
             setSelectedMovie(movie);
         }
